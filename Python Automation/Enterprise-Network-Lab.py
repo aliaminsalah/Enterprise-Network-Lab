@@ -115,7 +115,7 @@ csw1_vlans = [
     "vlan 10", "name CLIENTS",
     "vlan 20", "name VOICE",
     "vlan 30", "name PRINTERS",
-    "vlan 40", "name MANAGEMENT", # <-- تم إضافة الفاصلة هنا
+    "vlan 40", "name MANAGEMENT",
     "vlan 99", "name OSPF_TRANSIT"
 ]
 
@@ -150,7 +150,7 @@ csw2_cmds = [
     "exit",
     "router ospf 1",
     "router-id 10.0.128.3",
-    "network 10.0.131.0 0.0.0.255 area 0", # <-- تم تعديل النطاق ليشمل جميع الشبكات
+    "network 10.0.131.0 0.0.0.255 area 0", 
     "interface range Ethernet0/1 - 2",
     "description LACP_TO_CSW1",
     "channel-group 1 mode passive",
